@@ -1,7 +1,31 @@
-Veloland - Sales Report - ჩემი პირველი პროექტი.
-Data Source : AdventureWorks2019.
-ამ პროექტის მიზანი იყო გამომეყენებინა  adventureworks2019  SQL-ის მონაცემთა ბაზა და მომემზადებინა რეპორტი გაყიდვების შედეგებისთვის. ფიქციურ კომპანიას დავარქვი Veloland(ველოლენდი).
-SQl სკრიპტის მიმოხილვა:
-with function overview -ში მოვათავსე მთლიანი select სადაც მაქვს გაერთიანებული საჭირო ცხრილები და წამოღებული მაქვს ყველა  მონაცემი რაც მეხმარება რეპორტის მომზადებაში. კომენტარები მაქვს მითიტებული საჭირო ადგილებში.
-PBI რეპორტის მიმოხილვა: 
-სულ არის ორი სლაიდი. executive და HR. ორივე სლაიდს შესაბამისი ფილტრები აქვთ . ფილტრის გასააქტიურებლად CTRL დააჭირეთ , INFO ღილაკზე დაჭერით გადახვალთ ვიზუალების განმარტებებზე.
+# Veloland — Sales Report
+
+**Author:** Luka Gelashvili  
+**Purpose:** Power BI portfolio project built on the AdventureWorks2019 SQL database. Created a fictional company "Veloland" and built a sales performance report from scratch — from SQL data extraction to Power BI dashboard.
+
+---
+
+## Repository contents
+
+- **`Sales_report_veloland.sql`**  
+  Full SQL query script with JOINs across multiple AdventureWorks2019 tables. Uses a single SELECT with function overview, commented for readability.
+
+- **`Sales_report_Veloland_adventureWorks_2019.pbix`**  
+  Power BI report (2 pages). Data sourced from the SQL query output.
+
+---
+
+## What each report page shows
+
+- **Executive** — company-level sales KPIs, trends, revenue breakdowns, and interactive filters.
+- **HR** — employee performance metrics and headcount overview.
+
+Both pages include interactive filters (CTRL+click to activate). INFO buttons navigate to visual explanations.
+
+---
+
+## How to open
+
+1. Install Power BI Desktop.
+2. Open the `.pbix` file — data is embedded, no database connection needed.
+3. To review the SQL logic, open `Sales_report_veloland.sql` in any text editor or SSMS.
